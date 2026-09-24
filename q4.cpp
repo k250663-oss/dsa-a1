@@ -6,7 +6,7 @@ public:
     char name[30];
     int orders;
     Node* next;
-    Node(int i , char n[] , int o){
+    Node(int i ,char n[] ,int o){
         id = i;
         orders = o;
         int j = 0;
@@ -221,9 +221,9 @@ int main(){
     char n2[] = "Ahmed";
     char n3[] = "Sara";
 
-    riders.insert_end(1 , n1 , 5);
-    riders.insert_end(2 , n2 , 3);
-    riders.insert_beginning(3 , n3 , 7);
+    riders.insert_at_e(1 , n1 , 5);
+    riders.insert_at_e(2 , n2 , 3);
+    riders.insert_at_b(3 , n3 , 7);
     riders.display();
     cout<<"total riders: "<<riders.count()<<endl;
     riders.search(2);
